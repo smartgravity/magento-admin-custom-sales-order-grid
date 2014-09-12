@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SmartGravity_Orders>
+            <version>0.0.0.1</version>
+        </SmartGravity_Orders>
+    </modules>
+    <global>
+        <models>
+            <smartgravity_orders>
+                <class>SmartGravity_Orders_Model</class>
+                <resourceModel>smartgravity_orders_resource</resourceModel>
+            </smartgravity_orders>
+        </models>
+        <resources>
+            <smartgravity_orders_setup>
+                <setup>
+                    <module>SmartGravity_Orders</module>
+                </setup>
+            </smartgravity_orders_setup>
+        </resources>
+        <blocks>
+            <smartgravity_orders>
+                <class>SmartGravity_Orders_Block</class>
+            </smartgravity_orders>
+        </blocks>
+        <helpers>
+            <smartgravity_orders>
+                <class>SmartGravity_Orders_Helper</class>
+            </smartgravity_orders>
+        </helpers>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <smartgravity_orders before="Mage_Adminhtml">SmartGravity_Orders_Adminhtml</smartgravity_orders>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>

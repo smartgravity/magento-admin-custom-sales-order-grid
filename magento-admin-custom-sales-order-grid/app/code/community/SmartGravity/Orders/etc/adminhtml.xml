@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <sales>
+            <children>
+                <smartgravity_orders translate="title" module="smartgravity_orders">
+                    <sort_order>10</sort_order>
+                    <title>Orders - Products List</title>
+                    <action>adminhtml/order/</action>
+                </smartgravity_orders>
+            </children>
+        </sales>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <sales>
+                        <children>
+                            <smartgravity_orders translate="title" module="smartgravity_orders">
+                                <title>Orders - Products List</title>
+                            </smartgravity_orders>
+                        </children>
+                    </sales>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
